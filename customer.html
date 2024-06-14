@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of ABC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/customer.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="context">
+                    <img src="/img/logo.png" alt="logo">
+                    <h1>Banking Solutions</h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="user">
+                    <h2 id="WelcomeText">Welcome xxxx</h2>
+                </div>
+                <h2 id="datetime" class="customer_log">Last Login : 00 : 00 xx/xx/xxxx</h2>
+            </div>
+        </div>
+        <div class="row mt-5"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="b1">
+                <div class="btn1">
+                    <button onclick="redirectToBalance()" type="submit">Check Balance</button>
+                </div>
+                <div>
+                    <p>
+                        Keep your finances at your fingertips. With our user-friendly banking app, you can effortlessly monitor your account balance with just a tap.
+                    </p>
+                </div></div>
+            </div>
+            <div class="col-md-4">
+                <div class="b2">
+                <div class="btn2">
+                    <button onclick="redirectToSendMoney()" type="submit">Send Money</button>
+                </div>
+                <div>
+                    <p>
+                        "Send Money" feature lets you send money to friends, family, or anyone in just a few taps.
+                    </p>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+                <div class="b3">
+                <div class="btn3">
+                    <button onclick="redirectToStatement()" type="submit">Mini Statement</button>
+                </div>
+                <div>
+                    <p>
+                        Track your recent transactions effortlessly with our Mini Statement feature.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5"></div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="b1">
+                <div class="btn1">
+                    <button onclick="redirectToCard()" type="submit">Add Card</button>
+                </div>
+                <div>
+                    <p>
+                        Seamlessly expand payment options with our 'Add Card' feature
+                    </p>
+                </div></div>
+            </div>
+            <div class="col-md-4">
+                <div class="b1">
+                <div class="btn1">
+                    <button onclick="redirectToBlock()" type="submit">Block Card</button>
+                </div>
+                <div>
+                    <p>
+                        Instantly block your card with just a click for enhanced security and peace of mind
+                    </p>
+                </div></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var username = localStorage.getItem('role');
+        document.getElementById('WelcomeText').textContent = "Welcome " + username;
+        var currentDate = new Date();
+        currentDate.setHours(currentDate.getHours() - 1);
+        document.getElementById('datetime').textContent = "Last login : " + currentDate;
+        </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of ABC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/trans.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+    </div >
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="context">
+                    <img src="/img/logo.png" alt="logo">
+                    <h1>Banking Solutions</h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="user">
+                    <h2 id="WelcomeText">Welcome xxxx</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5"></div>
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-4">
+                <h1 id="head1">Remove Customer</h1>
+            <div class="wrapper1">
+                <form id="removeForm">
+                    <div class="login">
+                        <input type="text" placeholder="Account Number" id="ac" name="ac" required>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Remove</button>
+                    </div>
+                </form>
+            </div></div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <script>
+        var username = localStorage.getItem('role');
+        document.getElementById('WelcomeText').textContent = "Welcome " + username;
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // Fetch existing customer data from customer.json
+            fetch('customer.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Populate form fields with existing customer data
+                    document.getElementById('fullName').value = data.fullName;
+                    document.getElementById('dob').value = data.dob;
+                    document.getElementById('address').value = data.address;
+                    document.getElementById('cnumber').value = data.cnumber;
+                    document.getElementById('anumber').value = data.anumber;
+                    document.getElementById('email').value = data.email;
+                })
+                .catch(error => console.error('Error fetching customer data:', error));
+
+            // Event listener for form submission
+            document.getElementById("removeForm").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent the form from submitting
+
+                // Get form data
+                var formData = {
+                    fullName: "",
+                    dob: "",
+                    gender:"",
+                    nationality:"",
+                    address: "",
+                    cnumber:"",
+                    doj:"",
+                    anumber:"",
+                    email: "",
+                    accountType:"",
+                    amount:"",
+                    accountNo:"",
+                    pin:""
+                };
+
+                // Fetch existing customer data from customer.json
+                fetch('customer.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Update customer data with form data
+                        data.fullName = formData.fullName;
+                        data.dob = formData.dob;
+                        data.gender = formData.gender;
+                        data.nationality = formData.nationality;
+                        data.address = formData.address;
+                        data.cnumber = formData.cnumber;
+                        data.doj = formData.doj;
+                        data.anumber = formData.anumber;
+                        data.email = formData.email;
+                        data.accountType = formData.accountType;
+                        data.amount = formData.amount;
+                        data.accountNo = formData.accountNo;
+                        data.pin = formData.pin;
+
+                        // Convert data to JSON string
+                        var jsonData = JSON.stringify(data);
+
+                        // Save updated data back to customer.json
+                        var blob = new Blob([jsonData], { type: "application/json" });
+                        var a = document.createElement("a");
+                        a.href = URL.createObjectURL(blob);
+                        a.download = "customer.json";
+                        alert("Customer details deleted successfully!");
+                        a.click();
+                        this.reset();
+                    })
+                    .catch(error => 
+                    
+                    console.error('Error updating customer data:', error));
+            });
+        });
+    </script>
+    
+</body>

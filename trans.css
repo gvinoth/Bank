@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    background: url('/img/bg2.jpg') no-repeat;
+    background-size: cover;
+}
+
+.container{
+    margin-left: 0%;
+}
+
+.context {
+    padding-top: 20px;
+}
+
+.context img{
+    height: 30px;
+}
+
+.context h1{
+    /* align-items: center; */
+    opacity: 50%;
+    color: #fff;
+    font-size: 25px;
+}
+
+.user{
+    padding-left: 650px;
+    margin-right: 0%;
+    margin-top: 20px;
+}
+
+.user h2{
+    color: white;
+    font-size: medium;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    border: lightskyblue solid;
+    border-radius: 25px;
+    overflow-y: auto; /* Change from 'scroll' to 'auto' */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    max-height: 500px; /* Set maximum height */
+    padding: 20px; /* Consolidate padding */
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 8px; /* Set width of scrollbar */
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set color of scrollbar thumb */
+    /* border-radius: 4px; Add border radius for rounded thumb */
+    border-radius: 500px;
+    height: 0%;
+}
+
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .login {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin: 30px 0;
+}
+
+.wrapper1 {
+    width: 420px;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    border: lightskyblue solid;
+    border-radius: 15px;
+    overflow-y: auto; /* Change from 'scroll' to 'auto' */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    max-height: 500px; /* Set maximum height */
+    padding: 20px; /* Consolidate padding */
+}
+
+.wrapper1::-webkit-scrollbar {
+    width: 8px; /* Set width of scrollbar */
+}
+
+.wrapper1::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set color of scrollbar thumb */
+    /* border-radius: 4px; Add border radius for rounded thumb */
+    border-radius: 500px;
+    height: 0%;
+}
+
+#head{
+    color: white;
+    margin-left: 70px;
+}
+
+#head1{
+    color: white;
+    margin-left: 50px;
+}
+
+#head2{
+    color: white;
+    margin-left: 45px;
+}
+
+#head3{
+    color: white;
+    margin-left: 120px;
+}
+
+.wrapper1 h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper1 .login {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin: 30px 0;
+}
+
+.dropdown-input{
+    margin-left: 50px;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    /* border: none;
+    outline: none; */
+    /* border: 2px solid rgba(255,255,255,.2); */
+    border-radius: 70px;
+    /* opacity: 70%; */
+}
+
+.dropdown-input input{
+    margin-left: 50px;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    opacity: 30%;
+}
+
+.dropdown-input input::placeholder{
+    color:white;
+}
+
+.login input{
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    opacity: 50%;
+}
+
+.login input::placeholder{
+    color: #fff;
+}
+
+.login i{
+    position: absolute;
+    right: 30px;
+    padding-top: 50px;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember_pass label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember_pass a{
+    color: #fff;
+    text-decoration: none;
+    float: right;
+}
+
+#male1{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#female1{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#c1{
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+#c{
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+#male{
+    margin-left: 40px;
+}
+
+#female{
+    margin-left: 40px;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.wrapper1 .btn {
+    width:80%;
+    height:45px;
+    background:#fff;
+    opacity: 80%;
+    border-radius:40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size:16px;
+    margin-left: 40px;
+    margin-top: 25px;
+    color:#333;
+    font-weight:600;
+}
+
+.wrapper .btn {
+    width:80%;
+    height:45px;
+    background:#fff;
+    opacity: 80%;
+    border-radius:40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor:pointer;
+    font-size:16px;
+    margin-left: 40px;
+    margin-top: 25px;
+    color:#333;
+    font-weight:600;
+}
+
+button{
+    border: 0px;
+    background:transparent;
+}
+.wrapper1 .register-link{
+    font-size:14.5px;
+    text-align:center;
+    margin-top: 20px;
+}
+
+.register-link p a{
+    color:#fff;
+    text-decoration:none;
+    font-weight: 600;
+    color: darkslategray;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Style for the text box */
+  .dropdown-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer; /* Show cursor as pointer on hover */
+  }
+
+  /* Style for the dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  /* Style for the dropdown items */
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Style for the dropdown items on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown content when hovering over the text box */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+.area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 0%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
