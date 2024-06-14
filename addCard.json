@@ -1,0 +1,9 @@
+{
+    "card":"debit",
+    "card_type":"visa card",
+    "card_no":"375901234583598",
+    "expiry_date":"20-03-2034",
+    "cvv_no":"444",
+    "card_status":"Active",
+    "acno":"LYRU711425"
+}

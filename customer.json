@@ -1,1 +1,17 @@
-{"fullName":"Vinoth G","dob":"2002-11-20","gender":"on","nationality":"Indian","address":"Sasi nagar, Sivakasi","cnumber":"9487754737","doj":"2024-03-20","anumber":"","email":"20uad018@kamarajengg.edu.in","accountType":"Saving Account","amount":"1000","accountNo":"NQWG548639","pin":2413}
+{
+    "name":"Harshan",
+    "dob":"01-12-2003",
+    "gender":"male",
+    "nationality":"Indian",
+    "address":"103, EB Colony, VNR",
+    "contact_no":"9987621234",
+    "date_of_join":"20-03-2024",
+    "aadhar_no":"453267891256",
+    "email":"customer4@solartis.com",
+    "account_type":"saving",
+    "amt":2000,
+    "nominee":"",
+    "nom_relation":"",
+    "nom_contact":"",
+    "nom_email":""
+}
